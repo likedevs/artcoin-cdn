@@ -6,6 +6,7 @@ export const styles =  `
         z-index: 999;
         bottom: 0;
         left: 0;
+        background-color: #FFF;
     }
     
     #__button {
