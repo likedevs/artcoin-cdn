@@ -15,7 +15,7 @@ export const styles =  `
       border-radius: 50%;
       margin: 50px;
       cursor: pointer;
-      background-image: url("./images/artcoin.svg");
+      background-image: url("https://cdn.jsdelivr.net/gh/likedevs/artcoin-cdn/images/artcoin.svg");
       background-color: #6101ea;
       background-repeat: no-repeat;
       background-position: center center;
@@ -40,7 +40,7 @@ export const styles =  `
       width: 35px;
       height: 35px;
       border-radius: 50%;
-      background-image: url("./images/close-btn.svg");
+      background-image: url("https://cdn.jsdelivr.net/gh/likedevs/artcoin-cdn/images/close-btn.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 70%;
