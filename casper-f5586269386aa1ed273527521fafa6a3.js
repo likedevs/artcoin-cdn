@@ -69,7 +69,6 @@ closeButton.setAttribute("id", "__a-c-close-button");
 mainBLock.appendChild(closeButton);
 
 iframe.setAttribute("src", "https://front.artcoin.media/");
-// iframe.setAttribute("src", "http://localhost:8080");
 iframe.setAttribute("id", "__a-c-iframe");
 mainBLock.appendChild(iframe);
 
