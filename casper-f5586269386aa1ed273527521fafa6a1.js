@@ -1,4 +1,4 @@
-const buttonsCollection = document.getElementsByClassName("artcoin-btn");
+let buttonsCollection = document.getElementsByClassName("artcoin-btn");
 
 for (let i = 0; i < buttonsCollection.length; i++) {
   let element = buttonsCollection[i];

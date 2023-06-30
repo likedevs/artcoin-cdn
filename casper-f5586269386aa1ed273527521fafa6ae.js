@@ -1,6 +1,6 @@
 // import {styles} from "./styles.js";
 
-const styles =  `
+const styles = `
     #__main-block {
         min-width: 20px;
         min-height: 20px;
@@ -8,7 +8,6 @@ const styles =  `
         z-index: 999;
         bottom: 0;
         left: 0;
-        background-color: #FFF;
     }
     
     #__button {
@@ -18,11 +17,11 @@ const styles =  `
       margin: 50px;
       cursor: pointer;
       background-image: url("https://cdn.jsdelivr.net/gh/likedevs/artcoin-cdn/images/artcoin.svg");
-      background-color: #6101ea;
+      background-color: #dd1a33;
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 50% 50%;
-      box-shadow: 0px 0px 5px 0px rgba(97, 1, 234);
+      box-shadow: 0px 0px 5px 0px rgba(222,52,52,1);
     }
     
     #__a-c-iframe {
@@ -31,7 +30,7 @@ const styles =  `
       border: none;
       outline: none;
       border-radius: 0 10px 0 0;
-      box-shadow: 0px 0px 5px 0px rgba(97, 1, 234, 0.4);
+      box-shadow: 0px 0px 5px 0px rgba(238,238,238,1);
       display: none;
     }
     
@@ -47,7 +46,7 @@ const styles =  `
       background-position: center center;
       background-size: 70%;
       cursor: pointer;
-      background-color: #6101ea;
+      background-color: #dd1a33;
       display: none;
     }
 `;
@@ -69,7 +68,8 @@ mainBLock.appendChild(button);
 closeButton.setAttribute("id", "__a-c-close-button");
 mainBLock.appendChild(closeButton);
 
-iframe.setAttribute("src", "https://front.artcoin.media/");
+// iframe.setAttribute("src", "https://front.artcoin.media/");
+iframe.setAttribute("src", "http://localhost:8080");
 iframe.setAttribute("id", "__a-c-iframe");
 mainBLock.appendChild(iframe);
 
@@ -87,10 +87,12 @@ closeButton.onclick = () => {
 
 const hideIframe = () => {
   iframe.style.display = 'none';
+  mainBLock.style.background = 'transparent';
 };
 
 const showIframe = () => {
   iframe.style.display = 'block';
+  mainBLock.style.background = '#FFF';
 };
 
 const hideButton = () => {
