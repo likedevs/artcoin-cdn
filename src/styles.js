@@ -1,4 +1,22 @@
-export const styles =  `
+export const styles = `
+  @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+    
+    .artcoin-btn {
+      display: inline-block;
+      padding: 5px 15px 5px 30px;
+      border-radius: 15px;
+      color: #DD1A33;
+      box-shadow: 0px 0px 5px 0px rgba(222,52,52,.5);
+      cursor: pointer;
+      margin: 10px 20px;
+      background-color: #FFF; 
+      background-image: url('https://cdn.jsdelivr.net/gh/likedevs/artcoin-cdn/images/artcoin-red.svg');
+      background-repeat: no-repeat;
+      background-size: auto 40%;
+      background-position: 10px center;
+      font-family: 'Manrope', sans-serif;
+    }
+    
     #__main-block {
         min-width: 20px;
         min-height: 20px;
@@ -6,7 +24,6 @@ export const styles =  `
         z-index: 999;
         bottom: 0;
         left: 0;
-        background-color: #FFF;
     }
     
     #__button {
@@ -16,11 +33,11 @@ export const styles =  `
       margin: 50px;
       cursor: pointer;
       background-image: url("https://cdn.jsdelivr.net/gh/likedevs/artcoin-cdn/images/artcoin.svg");
-      background-color: #6101ea;
+      background-color: #dd1a33;
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 50% 50%;
-      box-shadow: 0px 0px 5px 0px rgba(97, 1, 234);
+      box-shadow: 0px 0px 5px 0px rgba(222,52,52,1);
     }
     
     #__a-c-iframe {
@@ -29,7 +46,7 @@ export const styles =  `
       border: none;
       outline: none;
       border-radius: 0 10px 0 0;
-      box-shadow: 0px 0px 5px 0px rgba(97, 1, 234, 0.4);
+      box-shadow: 0px 0px 5px 0px rgba(238,238,238,1);
       display: none;
     }
     
@@ -45,7 +62,7 @@ export const styles =  `
       background-position: center center;
       background-size: 70%;
       cursor: pointer;
-      background-color: #6101ea;
+      background-color: #dd1a33;
       display: none;
     }
 `;
