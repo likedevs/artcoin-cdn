@@ -35,7 +35,7 @@ We are building:
 
 In order to install the ArtCoin Technology on Your Web Application, please add the following script in your main html
 file, before closing the </body>
-tag: <script type="module" src="https://cdn.jsdelivr.net/gh/likedevs/artcoin-cdn/src/artcoin.js"></script>
+tag: ```<script type="module" src="https://cdn.jsdelivr.net/gh/likedevs/artcoin-cdn/src/artcoin.js"></script> ```
 As result, an iframe will be displayed on Your web app, that will allow Your users to:
 
 1. Authorize with their Casper Wallet
@@ -59,7 +59,9 @@ There are 2 options available to be displayed on Your web application:
 1. You buy services/goods through ArtCoin from Your users
 2. You sell services/goods through ArtCoin to Your users
 
-Option 1: Buy
+
+<b>Option 1: Buy</b>
+
 In order to buy services/goods through ArtCoin You will have to add the ArtCoin Smart button, alongside with the title,
 description and other details, related to the service/good, that You are willing to buy. In order to do that, You will
 have to add the following code snippet to Your web app:
@@ -71,13 +73,15 @@ have to add the following code snippet to Your web app:
 </div>
 ```
 
-ArtCoins_qty - how much ArtCoins You are willing to pay for requested service/good
-Button_text - the text displayed on the button, i.e. “Provide service”
+<b>ArtCoins_qty</b> - how much ArtCoins You are willing to pay for requested service/good
+<b>Button_text</b> - the text displayed on the button, i.e. “Provide service”
 
 After the user clicks on the button, a payment link shall be generated, that the user can send to the service/good
 Acquirer (to You), when the service/good is prepared to be delivered.
 
-Option 1: Sell
+
+<b>Option 2: Sell</b>
+
 In order to sell services/goods through ArtCoin You will have to add the ArtCoin Smart button, alongside with the title,
 description and other details, related to the service/good, that You are willing to sell. In order to do that, You will
 have to add the following code snippet to Your web app:
@@ -90,9 +94,9 @@ have to add the following code snippet to Your web app:
 </div>
 ```
 
-ArtCoins_qty - how much ArtCoins You are willing to get for requested service/good
-Button_text - the text displayed on the button, i.e. “Get service”
-Casper_Wallet_ID - Your Casper Wallet ID, at which You wish to receive the ArtCoins
+<b>ArtCoins_qty</b> - how much ArtCoins You are willing to get for requested service/good
+<b>Button_text</b> - the text displayed on the button, i.e. “Get service”
+<b>Casper_Wallet_ID</b> - Your Casper Wallet ID, at which You wish to receive the ArtCoins
 
 After the user clicks on the button, the iframe will open on Your web app, with the payment amount inserted. The user
 needs only to click the “Send” button to pay in ArtCoins for the good/service.
