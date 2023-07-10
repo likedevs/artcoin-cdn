@@ -74,6 +74,7 @@ have to add the following code snippet to Your web app:
 ```
 
 <b>ArtCoins_qty</b> - how much ArtCoins You are willing to pay for requested service/good
+
 <b>Button_text</b> - the text displayed on the button, i.e. “Provide service”
 
 After the user clicks on the button, a payment link shall be generated, that the user can send to the service/good
@@ -95,7 +96,9 @@ have to add the following code snippet to Your web app:
 ```
 
 <b>ArtCoins_qty</b> - how much ArtCoins You are willing to get for requested service/good
+
 <b>Button_text</b> - the text displayed on the button, i.e. “Get service”
+
 <b>Casper_Wallet_ID</b> - Your Casper Wallet ID, at which You wish to receive the ArtCoins
 
 After the user clicks on the button, the iframe will open on Your web app, with the payment amount inserted. The user
