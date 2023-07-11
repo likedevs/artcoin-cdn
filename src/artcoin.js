@@ -22,7 +22,7 @@ iframe.setAttribute("src", "https://front.artcoin.media/");
 iframe.setAttribute("id", "__a-c-iframe");
 mainBLock.appendChild(iframe);
 
-let buttonsCollection = document.getElementsByClassName("artcoin-btn");
+let buttonsCollection = document.getElementsByClassName("artcoin-btn-sell-service");
 
 for (let i = 0; i < buttonsCollection.length; i++) {
   let element = buttonsCollection[i];
@@ -31,6 +31,20 @@ for (let i = 0; i < buttonsCollection.length; i++) {
     const price = event.target.getAttribute('price');
     const owner = event.target.getAttribute('owner');
     iframe.setAttribute("src", `https://front.artcoin.media/?publicKey=${owner}&total=${price}`);
+    hideButton();
+    showIframe();
+    showCloseButton();
+  })
+}
+
+let buttonsBuyCollection = document.getElementsByClassName("artcoin-btn-buy-service");
+
+for (let i = 0; i < buttonsBuyCollection.length; i++) {
+  let element = buttonsBuyCollection[i];
+
+  element.addEventListener('click', function (event) {
+    const price = event.target.getAttribute('price');
+    iframe.setAttribute("src", `https://front.artcoin.media/?receive_total=${price}`);
     hideButton();
     showIframe();
     showCloseButton();

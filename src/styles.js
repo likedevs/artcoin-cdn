@@ -1,7 +1,23 @@
 export const styles = `
   @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
     
-    .artcoin-btn {
+    .artcoin-btn-buy-service {
+      display: inline-block;
+      padding: 5px 15px 5px 30px;
+      border-radius: 15px;
+      color: #DD1A33;
+      box-shadow: 0px 0px 5px 0px rgba(222,52,52,.5);
+      cursor: pointer;
+      margin: 10px 20px;
+      background-color: #FFF; 
+      background-image: url('https://cdn.jsdelivr.net/gh/likedevs/artcoin-cdn/images/artcoin-red.svg');
+      background-repeat: no-repeat;
+      background-size: auto 40%;
+      background-position: 10px center;
+      font-family: 'Manrope', sans-serif;
+    }
+    
+     .artcoin-btn-sell-service {
       display: inline-block;
       padding: 5px 15px 5px 30px;
       border-radius: 15px;
