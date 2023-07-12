@@ -1,4 +1,4 @@
-import {styles} from "./styles.js";
+import {styles} from "./styles-f0cf2314a2ddc276c7a4ae77c13da56a.js";
 
 const style = document.createElement('style');
 const mainBLock = document.createElement("div");
