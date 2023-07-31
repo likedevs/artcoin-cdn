@@ -6,6 +6,30 @@ const button = document.createElement("div");
 const closeButton = document.createElement("div");
 const iframe = document.createElement("iframe");
 
+
+const connectCasperToSite = () => {
+  if (window.CasperWalletProvider) {
+    const CasperWalletProvider = window.CasperWalletProvider;
+    const provider = CasperWalletProvider();
+
+    provider.requestConnection().then(connected => {
+      if (!connected) {
+        alert("Couldn't connect to wallet");
+      } else {
+        provider.getActivePublicKey().then(publicKey => {
+          // this.setPublicKey = publicKey;
+          // this.storePublicKey(publicKey);
+          // this.isLogged = true;
+        }).catch(error => {
+          alert(error.message);
+        });
+      }
+    });
+  } else {
+    alert('install Casper extension!');
+  }
+}
+
 style.innerHTML = styles;
 document.head.appendChild(style);
 
@@ -28,6 +52,8 @@ for (let i = 0; i < buttonsCollection.length; i++) {
   let element = buttonsCollection[i];
 
   element.addEventListener('click', function (event) {
+    connectCasperToSite();
+
     const price = event.target.getAttribute('price');
     const owner = event.target.getAttribute('owner');
     iframe.setAttribute("src", `https://front.artcoin.media/?publicKey=${owner}&total=${price}`);
@@ -43,6 +69,8 @@ for (let i = 0; i < buttonsBuyCollection.length; i++) {
   let element = buttonsBuyCollection[i];
 
   element.addEventListener('click', function (event) {
+    connectCasperToSite();
+
     const price = event.target.getAttribute('price');
     iframe.setAttribute("src", `https://front.artcoin.media/?receive_total=${price}`);
     hideButton();
