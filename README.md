@@ -35,7 +35,7 @@ We are building:
 
 In order to install the ArtCoin Technology on Your Web Application, please add the following script in your main html
 file, before closing the </body>
-tag: ```<script type="module" src="https://cdn.jsdelivr.net/gh/likedevs/artcoin-cdn/src/artcoin-f0cf2314a2ddc276c7a4ae77c13da56a.js"></script> ```
+tag: ```<script type="module" src="https://cdn.jsdelivr.net/gh/likedevs/artcoin-cdn/src/artcoin-f0cf2314a2ddc276c7a4ae77c13da56a2.js"></script> ```
 As result, an iframe will be displayed on Your web app, that will allow Your users to:
 
 1. Authorize with their Casper Wallet
