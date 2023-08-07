@@ -1,6 +1,6 @@
 export const styles = `
   @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
-    
+
     .artcoin-btn-buy-service {
       display: inline-block;
       padding: 5px 15px 5px 30px;
@@ -9,14 +9,14 @@ export const styles = `
       box-shadow: 0px 0px 5px 0px rgba(222,52,52,.5);
       cursor: pointer;
       margin: 10px 20px;
-      background-color: #FFF; 
+      background-color: #FFF;
       background-image: url('https://cdn.jsdelivr.net/gh/likedevs/artcoin-cdn/images/artcoin-red.svg');
       background-repeat: no-repeat;
       background-size: auto 40%;
       background-position: 10px center;
       font-family: 'Manrope', sans-serif;
     }
-    
+
      .artcoin-btn-sell-service {
       display: inline-block;
       padding: 5px 15px 5px 30px;
@@ -25,14 +25,14 @@ export const styles = `
       box-shadow: 0px 0px 5px 0px rgba(222,52,52,.5);
       cursor: pointer;
       margin: 10px 20px;
-      background-color: #FFF; 
+      background-color: #FFF;
       background-image: url('https://cdn.jsdelivr.net/gh/likedevs/artcoin-cdn/images/artcoin-red.svg');
       background-repeat: no-repeat;
       background-size: auto 40%;
       background-position: 10px center;
       font-family: 'Manrope', sans-serif;
     }
-    
+
     #__main-block {
         min-width: 20px;
         min-height: 20px;
@@ -41,7 +41,7 @@ export const styles = `
         bottom: 0;
         left: 0;
     }
-    
+
     #__button {
       width: 60px;
       height: 60px;
@@ -55,7 +55,7 @@ export const styles = `
       background-size: 50% 50%;
       box-shadow: 0px 0px 5px 0px rgba(222,52,52,1);
     }
-    
+
     #__a-c-iframe {
       width: 400px;
       height: 560px;
@@ -65,7 +65,7 @@ export const styles = `
       box-shadow: 0px 0px 5px 0px rgba(238,238,238,1);
       display: none;
     }
-    
+
     #__a-c-close-button {
       position: absolute;
       top: -29px;
