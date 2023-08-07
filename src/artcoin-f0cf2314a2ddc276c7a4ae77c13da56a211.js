@@ -42,8 +42,6 @@ mainBLock.appendChild(button);
 closeButton.setAttribute("id", "__a-c-close-button");
 mainBLock.appendChild(closeButton);
 
-// iframe.setAttribute("src", "https://front.artcoin.media/");
-iframe.setAttribute("src", sourceUrl);
 iframe.setAttribute("id", "__a-c-iframe");
 mainBLock.appendChild(iframe);
 
@@ -81,6 +79,8 @@ for (let i = 0; i < buttonsBuyCollection.length; i++) {
 }
 
 button.onclick = () => {
+    iframe.setAttribute("src", sourceUrl);
+
     hideButton();
     showIframe();
     showCloseButton();
